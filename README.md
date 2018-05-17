@@ -2,7 +2,8 @@ DJI Video Log Converter
 =======================
 
 Converts information from DJI video subtitle files (.SRT) into csv suitable for use in arcGIS
-There is a library and a script that calls it.
+
+There is a library (srtConvert) and a script that calls it (djiConvert).
 
 # Using the library directly from another python script
 
@@ -25,7 +26,7 @@ srtConvert.convertSRT(DJI_0123.SRT,DJI_0123.csv,False)
 ```
 It doesn't return anything, just writes the output file.
 
-# Converting files from the command line
+# Using the script to convert files from the command line
 
 If you want to just run the script from the command line, then get both srtConvert.py and djiConvert.py. 
 In djiConvert.py, it will fill in outFile and debug for you if you don't specify them, so you could just run:
