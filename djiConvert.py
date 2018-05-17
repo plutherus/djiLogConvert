@@ -28,8 +28,8 @@ if (args.outputFile):
 else:
     outFile = os.path.splitext(inFile)[0] + '.csv'
 
-logging.info('Reading DJI Subtitle information from ' + inFile)
-logging.info('Output be written to ' + outFile)
+logging.info('Reading DJI Subtitles from ' + inFile)
 
 srtConvert.convertSRT(inFile,outFile, debug)
 
+logging.info('Output was written to ' + outFile)

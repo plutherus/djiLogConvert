@@ -40,6 +40,7 @@ def convertSRT(inFile,outFile,debug):
 
                 height=lineparts[1][10:]
                 logging.debug('Height: ' + str(height))
+
             # Now that we have all the information, write it to the file:
             separator = ','
             outputLine = separator.join([date,time,latitude,longitude,height])
