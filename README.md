@@ -1,7 +1,10 @@
 DJI Video Log Converter
 =======================
 
-Converts information from DJI video subtitle files (.SRT) into csv suitable for use in arcGIS
+Converts information from DJI video subtitle files (.SRT) into csv suitable for use in arcGIS or whatever you want a csv for.
+
+Note that this does *not* read the flight log, just the files associated with every video - so any part of the flight
+that doesn't include video won't be shown in the csv file.
 
 There is a library (srtConvert) and a script that calls it (djiConvert).
 
